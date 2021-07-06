@@ -6,10 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>MYKONOOOOS</title>
+
 </head>
 
+
+<script>
+    $(document).ready(function () {
+
+        if($(window).width() > 1024 ){
+            $('nav').show();
+        }
+
+        if ($(window).width() < 1024) {
+            $('a').click(function () {
+            $('nav').hide();
+        });
+        }
+
+        $(".burger").click(function () {
+            $('nav').toggle();
+        });
+
+        
+    });
+</script>
+
 <body>
+    <img class="burger" src="images/icons/menu.svg">
+
     <div class="opacity"></div>
     <nav>
         <ul>
@@ -47,6 +73,9 @@
                     consistency, security, and professionalism during your stay.</p>
             </div>
         </div>
+        <div class="ghost">
+            <img src="images/about.jpg" />
+        </div>
 
     </div>
 
@@ -69,6 +98,9 @@
             </div>
         </div>
         <div class="imageItem">
+            <img src="images/fleet.jpg" />
+        </div>
+        <div class="ghost">
             <img src="images/fleet.jpg" />
         </div>
     </div>
@@ -96,6 +128,9 @@
                     Anna Paraga, and the Super Paradise.</p>
             </div>
         </div>
+        <div class="ghost">
+            <img src="images/around.jpg" />
+        </div>
     </div>
 
     <div id="holidays" class="container">
@@ -114,6 +149,9 @@
             </div>
         </div>
         <div class="imageItem">
+            <img src="images/holidays.jpg" />
+        </div>
+        <div class="ghost">
             <img src="images/holidays.jpg" />
         </div>
     </div>
