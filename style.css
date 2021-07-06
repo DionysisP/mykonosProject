@@ -121,6 +121,36 @@ h3{
 .row{
     padding:20px;
 }
+.allServices{
+    
+
+    margin:0 auto;
+    text-align: center;
+    background-color: #eaeaea;
+    font-size: 20px;
+    padding: 60px 0;
+}
+.wrapper{
+    text-align: center;
+    margin-top:50px;
+}
+.service{
+    padding:0 20px 25px 20px;
+    display:inline-block;
+}
+.allServices img{
+    width:300px;
+    height: 200px;
+}
+footer{
+    font-size:22px;
+    text-align: center;
+    color:black;
+    padding:5px;
+}
+footer a{
+    color:blue;
+}
 
 @media screen and (max-width: 1024px){
     li{
@@ -145,6 +175,9 @@ h3{
         margin:0 auto;
         font-size: 19px;
     }
+    .textContent{
+        padding:50px 0;
+    }
     .textContent h1{
         font-size: 36px;
         text-align: center;
@@ -166,6 +199,7 @@ h3{
     }
     .rowContainer{
         text-align: center;
+        font-size:25px;
     }
 }
 
@@ -209,6 +243,9 @@ h3{
         margin:0 auto;
         font-size: 19px;
     }
+    .textContent{
+        padding:50px 10px;
+    }
     .textContent h1{
         font-size: 36px;
         text-align: center;
@@ -230,6 +267,7 @@ h3{
     }
     .rowContainer{
         text-align: center;
+        font-size:25px;
     }
 }
 
@@ -276,6 +314,9 @@ li{
     margin:0 auto;
     font-size: 19px;
 }
+.textContent{
+    padding:50px 10px;
+}
 .textContent h1{
     font-size: 36px;
 }
@@ -293,6 +334,11 @@ li{
 }
 .rowContainer{
     text-align: center;
+    font-size:18px;
+}
+.allServices img{
+    width:250px;
+    height:150px;
 }
 
 }

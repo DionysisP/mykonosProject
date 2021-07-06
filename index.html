@@ -15,21 +15,21 @@
 <script>
     $(document).ready(function () {
 
-        if($(window).width() > 1024 ){
+        if ($(window).width() > 1024) {
             $('nav').show();
         }
 
         if ($(window).width() < 1024) {
             $('a').click(function () {
-            $('nav').hide();
-        });
+                $('nav').hide();
+            });
         }
 
         $(".burger").click(function () {
             $('nav').toggle();
         });
 
-        
+
     });
 </script>
 
@@ -39,16 +39,17 @@
     <div class="opacity"></div>
     <nav>
         <ul>
-            <li><a href="#intro">Homepage</a></li>
+            <li><a href="#welcome">Homepage</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#fleet">Reliable Fleet</a></li>
             <li><a href="#gettingAround">Getting Around</a></li>
             <li><a href="#holidays">Relaxing Holidays</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div id="intro">
+    <div id="welcome">
         <img class="firstImg" src="images/img1.jpg" />
 
     </div>
@@ -155,7 +156,54 @@
             <img src="images/holidays.jpg" />
         </div>
     </div>
+    <div id="services">
+        <div class="allServices">
 
+            <h1>Services</h1>
+            <div class="wrapper">
+                <div class="service">
+                    <img src="images/beach.jpg" />
+                    <h4>Beach Transfers</h4>
+                </div>
+
+                <div class="service">
+                    <img src="images/port.jpg" />
+                    <h4>Port Transfers</h4>
+                </div>
+
+                <div class="service">
+                    <img src="images/airport.jpg" />
+                    <h4>Airport Transfers</h4>
+                </div>
+
+                <div class="service">
+                    <img src="images/club.jpg" />
+                    <h4>Clubbing Transfers</h4>
+                </div>
+<br>
+                <div class="service">
+                    <img src="images/wedding.jpg" />
+                    <h4>Wedding Transfers</h4>
+                </div>
+
+                <div class="service">
+                    <img src="images/sightseeing.jpg" />
+                    <h4>Sightseeing Transfers</h4>
+                </div>
+
+                <div class="service">
+                    <img src="images/group.jpg" />
+                    <h4>Group Transfers</h4>
+                </div>
+
+                <div class="service">
+                    <img src="images/vip.jpg" />
+                    <h4>VIP Transfers</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div id="contact">
         <div class="rowContainer">
@@ -174,6 +222,12 @@
 
         </div>
     </div>
+
+
+    <footer>
+        <h6>Developed by <a href="https://www.linkedin.com/in/dionysis-patsiouras-a10415213/">Dionysis Patsiouras</a>
+        </h6>
+    </footer>
 </body>
 
 </html>
