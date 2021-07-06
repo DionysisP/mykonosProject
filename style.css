@@ -100,14 +100,14 @@ h3{
 
 #contact{
     width:100%;
-    background-color: #a4a4a4;
-    color:white;
+    background-color: #dcdcdc;
+    color:#545454;
     font-size: 30px;
     text-align:center;
     padding:150px 0;
 }
 #contact h2{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #545454;
     margin-bottom: 20px;
     padding-bottom:10px;
 }
@@ -132,7 +132,7 @@ h3{
 
     margin:0 auto;
     text-align: center;
-    background-color: #eaeaea;
+    background-color: #f7f7f7;
     font-size: 20px;
     padding: 60px 0;
 }
@@ -143,6 +143,9 @@ h3{
 .service{
     padding:0 20px 25px 20px;
     display:inline-block;
+}
+.service h4{
+    font-size: 23px;
 }
 .allServices img{
     width:300px;
