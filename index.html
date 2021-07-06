@@ -22,12 +22,25 @@
         if ($(window).width() < 1024) {
             $('a').click(function () {
                 $('nav').hide();
+                $('.close').show();
             });
         }
 
-        $(".burger").click(function () {
-            $('nav').toggle();
+        $('.close').click(function(){
+            $('nav').hide();
+            $('.close').hide();
+            $('.burger').show();
         });
+        $(".burger").click(function () {
+            $('nav').show();
+            $('.close').show();
+            $('.burger').hide();
+        });
+
+        $('a').click(function(){
+            $('.burger').show();
+            $('.close').hide();
+        })
 
 
     });
@@ -35,7 +48,7 @@
 
 <body>
     <img class="burger" src="images/icons/menu.svg">
-
+    <img class="close" src="images/icons/close.svg">
     <div class="opacity"></div>
     <nav>
         <ul>
