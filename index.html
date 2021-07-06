@@ -13,38 +13,39 @@
 
 
 <script>
+
     $(document).ready(function () {
-
-        if ($(window).width() > 1024) {
+        if ($(window).width() >= 769) {
             $('nav').show();
-        }
 
-        if ($(window).width() < 1024) {
+        } else {
             $('a').click(function () {
                 $('nav').hide();
-                $('.close').show();
-            });
+                $('.close').hide();
+                $('.burger').show();
+            })
+            $('nav').hide();
+            
         }
 
-        $('.close').click(function(){
-            $('nav').hide();
-            $('.close').hide();
-            $('.burger').show();
-        });
         $(".burger").click(function () {
             $('nav').show();
             $('.close').show();
             $('.burger').hide();
         });
 
-        $('a').click(function(){
-            $('.burger').show();
+        $('.close').click(function () {
+            $('nav').hide();
             $('.close').hide();
-        })
+            $('.burger').show();
+        });
+
 
 
     });
+
 </script>
+
 
 <body>
     <img class="burger" src="images/icons/menu.svg">
@@ -194,7 +195,7 @@
                     <img src="images/club.jpg" />
                     <h4>Clubbing Transfers</h4>
                 </div>
-<br>
+                <br>
                 <div class="service">
                     <img src="images/wedding.jpg" />
                     <h4>Wedding Transfers</h4>
