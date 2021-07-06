@@ -10,6 +10,7 @@
 }
 .burger{
     display: none;
+    z-index: 2;
 }
 a{
     text-decoration: none;
@@ -25,12 +26,14 @@ a:hover{
     height:50px;
     background-color: black;
     opacity: 0.7;
+    z-index: 1;
     
 }
 nav{
     width: 98vw;
     text-align: right;
     position: fixed;
+    z-index: 2;
 }
 ul{
     list-style-type: none;
@@ -46,14 +49,17 @@ li{
     height:100%;
 }
 .callUs{
+  
+  font-size: 35px;
   position: absolute;
-  top:50%;
-  bottom:50%;
-  left:50%;
-  right:50%;
-  width:auto;
+  right:0;
+  left:0;
+  top:30%;
   text-align: center;
-  font-size: 30px;
+  background-color: #0971ffb0;
+  color:white;
+  padding:50px;
+  z-index: 0;
 }
 
 .container{
@@ -208,7 +214,7 @@ footer a{
     .burger{
         display: block;
         position: fixed;
-        z-index: 1;
+        z-index: 2;
         width:45px;
         padding:3px 10px 0 0;
         right:0;
@@ -278,7 +284,7 @@ footer a{
 .burger{
     display: block;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width:45px;
     padding:3px 10px 0 0;
     right:0;
@@ -299,6 +305,20 @@ li{
     padding:25px 0;
     font-size:20px;
 }
+
+.callUs{
+  
+    font-size: 25px;
+    position: relative;
+    right:0;
+    left:0;
+    top:30%;
+    text-align: center;
+    background-color: #0971ffb0;
+    color:white;
+    padding:50px;
+  }
+  
 
 .container{
     display:block;
